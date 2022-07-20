@@ -3,7 +3,7 @@ import styles from "./task.module.css";
 import AddTask from "../AddTask/AddTask"
 import styled from "styled-components";
 import { FaTrash } from "react-icons/fa";
-import Navbar from '../Navbar/Navbar'
+
 
 const Task = () => {
 
@@ -14,10 +14,8 @@ const Task = () => {
   }
 
   const Container = styled.div`
-    border: 2px solid black;
-    width: 50%;
-    height: 500px;
-    background-color: #74f4cf;
+    width: 90%;
+    height: 400px;
     padding: 15px;
     margin: auto;
     `
@@ -49,8 +47,7 @@ const Task = () => {
 
 
   return (
-    <Container>
-      <Navbar />
+    <Container id="task"> 
       <AddTask setDataProps={setData} />
       <Container2>
         {todoList.map((e) => (

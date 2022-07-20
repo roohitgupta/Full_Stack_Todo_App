@@ -5,9 +5,9 @@ import "./Navbar.css"
 
 const Navbar = () => {
     const nav = [ 
-        { title: "SignUp", to: "#home" },
-        { title: "Login", to: "#about" },
-        { title: "TaskList", to: "#userList" },
+        { title: "signUp", to: "#signup" },
+        { title: "login", to: "#login" },
+        { title: "tasklist", to: "#task" },
 
     ];
 

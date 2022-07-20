@@ -54,12 +54,12 @@ const Task = () => {
   return (
     <Container>
       <AddTask setDataProps={setData} />
-      <Container2 data-testid="task-text">
+      <Container2 >
         {todoList.map((e) => (
-          <Li data-testid="task" key={e.id} className={styles.task} >
-            <input type="checkbox" style={{margin:"15px"}} data-testid="task-checkbox" />
+          <Li key={e.id} className={styles.task} >
+            <input type="checkbox" style={{margin:"15px"}} />
             <div>{e}</div>
-            <button data-testid="task-remove-button" style={{fontSize:"large", border:"none"}} onClick={() => deleteItem(e)}><FaTrash/></button>
+            <button style={{fontSize:"large", border:"none"}} onClick={() => deleteItem(e)}><FaTrash/></button>
           </Li>
           ))}
       </Container2>

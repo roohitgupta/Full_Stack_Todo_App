@@ -3,6 +3,7 @@ import styles from "./task.module.css";
 import AddTask from "../AddTask/AddTask"
 import styled from "styled-components";
 import { FaTrash } from "react-icons/fa";
+import Navbar from '../Navbar/Navbar'
 
 const Task = () => {
 
@@ -48,6 +49,7 @@ const Task = () => {
 
   return (
     <Container>
+      <Navbar />
       <AddTask setDataProps={setData} />
       <Container2>
         {todoList.map((e) => (

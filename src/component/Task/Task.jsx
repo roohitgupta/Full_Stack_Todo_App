@@ -20,12 +20,13 @@ const Task = () => {
     background-color: #74f4cf;
     padding: 15px;
     margin: auto;
-  `
+    `
    const Container2 = styled.div`
    border: 1px solid black;
    background-color: whitesmoke;
    width: 90%;
    margin: auto;
+   margin-top: 15px; 
  `
    const Li = styled.li`
      display: flex;

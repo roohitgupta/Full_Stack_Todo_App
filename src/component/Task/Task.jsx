@@ -14,31 +14,25 @@ const Task = () => {
 
   const Container = styled.div`
     border: 2px solid black;
-    width: 400px;
+    width: 50%;
     height: 500px;
     background-color: #74f4cf;
     padding: 15px;
     margin: auto;
-    width: 70%;
   `
-
    const Container2 = styled.div`
    border: 1px solid black;
    background-color: whitesmoke;
    width: 90%;
    margin: auto;
-
  `
    const Li = styled.li`
      display: flex;
-     justify-content: center;
+     justify-content: space-between;
      margin: 10px;
      font-size: 25px;
      align-items: center;
-     border: 1px dotted black;
-
  `
-
  
 
  const deleteItem = (ind) => {
@@ -51,13 +45,14 @@ const Task = () => {
 
 
 
+
   return (
     <Container>
       <AddTask setDataProps={setData} />
-      <Container2 >
+      <Container2>
         {todoList.map((e) => (
           <Li key={e.id} className={styles.task} >
-            <input type="checkbox" style={{margin:"15px"}} />
+            <input type="checkbox" style={{}} />
             <div>{e}</div>
             <button style={{fontSize:"large", border:"none"}} onClick={() => deleteItem(e)}><FaTrash/></button>
           </Li>

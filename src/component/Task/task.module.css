@@ -1,18 +1,13 @@
 .task  {
     background-color: lightblue;
   }
-  
-  
-  .task > :nth-child(2) {
-    border: 1px solid black;
+.task > :nth-child(2) {
+
     padding: 5px;
-    width: 25%;
+    width: 50%;
     
   }
-  .task > :nth-child(3) {
-    margin: 25px;
-  }
-  .task > :nth-child(5) {
+.task > :nth-child(3) {
     
     margin: 15px;
   }

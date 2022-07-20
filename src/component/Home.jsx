@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from "styled-components";
-import Navbar from "./Navbar/Navbar"
+
 import Task from "./Task/Task"
 
 const Home = () => {
@@ -17,9 +17,9 @@ const Home = () => {
 
   return (
     <Container>
-      <Navbar />
-
       <Task />
+
+      
 
     </Container>
   )

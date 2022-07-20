@@ -5,9 +5,9 @@ import "./Navbar.css"
 
 const Navbar = () => {
     const nav = [ 
-        { title: "signUp", to: "#signup" },
-        { title: "login", to: "#login" },
-        { title: "tasklist", to: "#task" },
+        { title: "signUp", to: "/signup" },
+        { title: "login", to: "/login" },
+        { title: "tasklist", to: "/tasklist" },
 
     ];
 
@@ -15,7 +15,11 @@ const Navbar = () => {
         <div className="mainNavbar">
 
             {nav.map((e, i) => (
-                <a key={i} href={e.to} style={{ margin: "5px" }} ><button className="LinkBtn"> {e.title}</button></a>
+                <a 
+                key={i} 
+                href={e.to} 
+                style={{ margin: "5px" }} ><button 
+                className="LinkBtn"> {e.title} </button></a>
                     )
                 )
             }

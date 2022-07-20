@@ -1,12 +1,12 @@
 import './App.css';
-import AddTask from "./component/AddTask/AddTask"
+import Task from "./component/Task/Task"
 
 
 function App() {
   return (
     <div>
       TODO APP
-      <AddTask />
+      <Task />
     </div>
     
   );
